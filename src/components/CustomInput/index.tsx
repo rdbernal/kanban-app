@@ -1,7 +1,7 @@
 type Props = {
   label: string;
-  type: string
-}
+  type: string;
+};
 
 export default function CustomInput({ label, type }: Props) {
   return (
@@ -9,5 +9,5 @@ export default function CustomInput({ label, type }: Props) {
       <label>{label}</label>
       <input className="p-2 outline-none rounded" type={`${type}`} />
     </div>
-  )
+  );
 }
