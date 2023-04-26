@@ -28,10 +28,10 @@ export default function Navbar() {
           } lg:flex lg:gap-5 lg:items-center lg:ml-auto`}
         >
           <li>
-            <Link href="#">Boards</Link>
+            <Link href="/">Boards</Link>
           </li>
           <li>
-            <Link href="#">Team</Link>
+            <Link href="/team">Team</Link>
           </li>
           <li>
             <Link href="#">Reports</Link>
