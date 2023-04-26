@@ -11,6 +11,10 @@ export default function Navbar() {
     setShowMenu((sm) => (sm = !sm));
   }
 
+  function handleCloseNavbar() {
+    setShowMenu(false);
+  }
+
   return (
     <nav
       className={`bg-violet-600 w-screen ${
@@ -23,20 +27,20 @@ export default function Navbar() {
         <ul
           className={`bg-violet-600 ${
             showMenu
-              ? "fixed top-20 left-0 w-screen h-fit p-6 flex flex-col gap-10"
+              ? "fixed top-20 left-0 w-screen h-[calc(100vh-5rem)] py-14 px-6 flex flex-col gap-10"
               : "hidden"
           } lg:flex lg:gap-5 lg:items-center lg:ml-auto`}
         >
           <li>
-            <Link href="/">Boards</Link>
+            <Link href="/" onClick={handleCloseNavbar}>Boards</Link>
           </li>
           <li>
-            <Link href="/team">Team</Link>
+            <Link href="/team" onClick={handleCloseNavbar}>Team</Link>
           </li>
           <li>
             <Link href="#">Reports</Link>
           </li>
-          <Button tailwindClasses="w-full bg-slate-100 py-2 px-6 rounded-md text-violet-600 mt-14 lg:mt-0">
+          <Button tailwindClasses="w-full bg-slate-100 py-2 px-6 rounded-md text-violet-600 mt-auto lg:mt-0">
             Logout
           </Button>
         </ul>
