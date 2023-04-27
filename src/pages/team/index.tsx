@@ -8,7 +8,7 @@ export default function Team() {
     <section className="bg-slate-200">
       <section className="min-h-screen max-w-screen-2xl mx-auto py-8 px-4 flex flex-col gap-12">
         <header className="flex flex-col gap-8 md:flex-row md:items-end md:justify-between md:gap-12">
-          <CustomInput label="Search for a member" type="text"/>
+          <CustomInput label="Search for a member" placeholder="Search for name or e-mail..." type="text"/>
 
           <Button tailwindClasses="w-full bg-violet-600 py-2 px-6 rounded-md text-slate-100 md:w-1/4 md:max-h-10">
           Add member

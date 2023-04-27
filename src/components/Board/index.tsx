@@ -50,11 +50,12 @@ export default function Board() {
         ))}
       </main>
 
-      <footer>
+      <footer className="flex flex-col gap-2">
         <Button tailwindClasses="w-full bg-violet-600 py-2 px-6 rounded-md text-slate-100">
-          Edit
+          View
         </Button>
       </footer>
     </article>
+
   );
 }
