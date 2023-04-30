@@ -1,7 +1,7 @@
 // Components
 import CustomInput from "@/components/CustomInput";
 import Button from "@/components/Button";
-import Board from "@/components/Board";
+import BoardCard from "@/components/BoardCard";
 
 export default function Home() {
   return (
@@ -19,13 +19,13 @@ export default function Home() {
           <h1 className="text-xl font-semibold text-violet-900 text-center">Boards</h1>
 
           <div className="flex flex-col gap-4 md:grid md:grid-cols-2 2xl:grid-cols-3">
-            <Board/>
-            <Board/>
-            <Board/>
-            <Board/>
-            <Board/>
-            <Board/>
-            <Board/>
+            <BoardCard/>
+            <BoardCard/>
+            <BoardCard/>
+            <BoardCard/>
+            <BoardCard/>
+            <BoardCard/>
+            <BoardCard/>
           </div>
         </main>
 
